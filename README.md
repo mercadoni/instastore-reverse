@@ -29,7 +29,7 @@ In this test you are going to fix some problems happening in this API. You can h
 > Tottus Quilca
 > You can extract their details here https://www.tottus.com.pe/tottus/storelocations
 
-### Samantha Lopez - Account Manager Instaleap reported:
+#### Samantha Lopez - Account Manager Instaleap reported:
 > Hola, me reportan por whatsapp que en HEB no
 > pueden obtener tiendas, les da error 500
 > It was not possible to place the order, please try again later
