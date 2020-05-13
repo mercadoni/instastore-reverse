@@ -117,11 +117,11 @@ We'll select the store with the minimal ETA.
 
 ### Architecture
 
-![arch](https://github.com/mercadoni/instastore-reverse/raw/dev/arch.png)
+![arch](https://raw.githubusercontent.com/mercadoni/instastore-reverse/master/arch.png)
 
 ### Database
 
-![db](https://github.com/mercadoni/instastore-reverse/raw/dev/db.png)
+![db](https://raw.githubusercontent.com/mercadoni/instastore-reverse/master/db.png)
 
 ### Security
 
