@@ -1,0 +1,72 @@
+{
+  "name": "instastore",
+  "version": "1.0.0",
+  "description": "InstaStore is a microservice in charge of selecting the closest \"convenience\" store to deliver a groceries order to our B2B clients.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pretest": "eslint api",
+    "test": "cross-env NODE_ENV=test jest --detectOpenHandles --collectCoverage",
+    "ci:test": "npm run test -- --ci --runInBand",
+    "seed": "node -e \"require('./seed_db').seed()\"",
+    "seed:local": "NODE_ENV=test node -e \"require('./seed_db').seed()\""
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "api/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 93,
+        "functions": 93,
+        "lines": 93,
+        "statements": -10
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anmrdz/instastore.git"
+  },
+  "keywords": [
+    "delivery",
+    "distance",
+    "minimal"
+  ],
+  "author": "anmrdz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anmrdz/instastore/issues"
+  },
+  "homepage": "https://github.com/anmrdz/instastore#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-openapi-validator": "^3.10.0",
+    "geolib": "^3.2.1",
+    "got": "^10.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.6",
+    "morgan": "^1.10.0",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "engines": {
+    "node": "13.x"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.2.4",
+    "jest-junit": "^10.0.0",
+    "node-mocks-http": "^1.8.1",
+    "supertest": "^4.0.2"
+  }
+}
